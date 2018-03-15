@@ -27,7 +27,7 @@ body{
     cursor:pointer;
 }
 .sticky li:hover{
-    margin-right:-90px;
+    margin-right:-70px;
 }
 .sticky li img{
     float:right;
@@ -270,14 +270,25 @@ body{
     margin-bottom: 50px;
 }
 
+@media (max-width: 620px)
+{
+    .people-trending{
+        display: none;
+    }
+}
+
 .people-trending-head{
     
 }
 
-.people-trending-head h3{
+.people-trending-head{
+    text-align: right;
+}
+
+.people-trending-head1 h3{
     border: 2px solid #333;
     border-left: 0;
-    display: inline-block;
+    position: relative; 
     padding: 5px;
     padding-right: 14px;
     margin-left: 0;
@@ -286,6 +297,42 @@ body{
     margin-top: 0;
 }
 
+.people-trending-head1 h3:after {
+    padding:0;margin:0;display:block;
+    content: "";
+    width:50%;
+    height:2px;
+    background-color:#f1f1f1;
+    position: absolute;
+    left:0;
+    top:-2px;
+  }
+.people-trending-head1 h3 span{
+    color: #e2004f;
+}
+.people-trending-head h3{
+    border: 2px solid #333;
+    border-left: 0;
+    position: relative; 
+    padding: 5px;
+    padding-right: 14px;
+    margin-left: 0;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+.people-trending-head h3:after {
+    padding:0;margin:0;display:block;
+    content: "";
+    width:50%;
+    height:2px;
+    background-color:#ffffff;
+    position: absolute;
+    left:0;
+    top:-2px;
+  }
+
 .people-trending-head h3 span{
     color: #e2004f;
 }
@@ -293,6 +340,7 @@ body{
 
 .people-trending-car-row{
     padding: 20px 0;
+    margin: 0 auto !important;
 }
 
 .people-trending-car-row .card-slide{
@@ -329,9 +377,84 @@ body{
 }
 
 
+.head-line{
+    width: 100%;
+    height: 1.5px;
+    background-color: rgb(255, 116, 92);
+    margin-top: 17px;
+}
+
+.up-next-section{
+    margin-bottom: 30px;
+}
+
+.up-next{
+    text-align: center;
+}
+.up-next p{
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.up-next p span{
+    color: #e2004f;
+}
+
+.up-next-details h3{
+    font-weight: 600;
+}
+
+.up-next-details p{
+    margin-top: 30px;
+}
+
+.btn-line{
+    width: 100%;
+    height: 1.5px;
+    background-color: rgb(255, 116, 92);
+    margin-top: 15px;
+}
+
+.up-next button{
+    background-color: rgb(228, 174, 25);
+    border-radius: 5px; 
+}
 
 
+.trending-today-card{
+    border: 1px solid #bbbbbb;
+    border-radius: 2px; 
+}
 
+.trending-today-card-head {
+    font-size:14px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.trending-today-card-detail {
+    font-size:11px;
+    margin-top: -10px;
+}
+
+.trending-card-by{
+    margin-top: -8px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.trending-card-by p span{
+    color: #55acee;
+}
+
+.trendind-today-tag{
+    margin-top:-8px;
+    margin-right: -5px; 
+    padding: 2px 10px;
+    width: 120 !important;
+    background-color: #337ab7;
+    color: #ffffff;
+}
 
 .footer-top{
     background-color: #07528c;
